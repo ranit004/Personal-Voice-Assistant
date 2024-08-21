@@ -11,7 +11,7 @@ import os
 
 rcogniser = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "5a1a2e16b5be430cbe79891b7decb60f"
+newsapi = "your own api key"
 
 def speak_old(text):
     engine = pyttsx3.init()
@@ -84,7 +84,7 @@ def processcommand(c):
 
     elif "news" in c.lower():
         speak("ok")
-        r = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=5a1a2e16b5be430cbe79891b7decb60f")
+        r = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=your own api key")
         
 
         if r.status_code == 200:
