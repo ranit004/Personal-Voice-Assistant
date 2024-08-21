@@ -11,6 +11,6 @@ def speak(text):
     print(rate)
     engine.setProperty('rate', 10)
 
-speak("bol bhosrike")
+speak("Hello World")
 
     
